@@ -1,4 +1,4 @@
-# ansible-playbook
+# Ansible-playbook
 
 añadimos los host a los que queremos mandar instrucciones con ansible en etc/ansible/hosts
 todos los servidores ya deben de contar con ssh y python previamente instalados
