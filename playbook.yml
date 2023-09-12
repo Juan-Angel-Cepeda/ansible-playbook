@@ -1,0 +1,14 @@
+- hosts: all
+  tasks:
+  - name: crear unarpeta alumnos
+    file:
+      path: "/Alumnos"
+      state: directory
+  - name: crear archivos de cada participante
+    file:
+      path: "/Alumnos/{{ item }}"
+      state: touch
+    with_items:
+      - "juan_angel_cepeda.txt"
+      - "manuel_alfonso_balderrama.txt"
+
